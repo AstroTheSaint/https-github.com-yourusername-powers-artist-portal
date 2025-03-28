@@ -1,0 +1,63 @@
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom, #1E1E1E, #121212);
+  color: white;
+  overflow-x: hidden;
+}
+header {
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+.rotating-roles {
+  font-size: 1.25rem;
+  color: #1DB954;
+  margin-top: 10px;
+  animation: fadein 3s infinite;
+}
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+.intro {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+ul.features {
+  list-style: none;
+  padding-left: 0;
+}
+ul.features li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+#globeViz {
+  width: 100%;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 12px;
+  background-color: #121212;
+}
+input[type=range] {
+  width: 100%;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 0.85rem;
+}
+@keyframes fadein {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
