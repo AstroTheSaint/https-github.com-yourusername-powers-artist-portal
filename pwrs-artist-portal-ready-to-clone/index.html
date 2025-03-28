@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PWRS - Powers Artist Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/three@0.144.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@4.3.0/dist/globe.gl.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to PWRS</h1>
+    <div class="rotating-roles">
+      <span>Artist Portal</span>
+      <span>Booker Portal</span>
+      <span>Agent Portal</span>
+    </div>
+    <a href="#demo" class="cta-button">View GIT Demo</a>
+  </header>
+
+  <main>
+    <section class="intro" id="demo">
+      <h2>Global Intelligence Tracking (GIT)</h2>
+      <p>Scan the globe by year and month. See where you've performed, how much you made, and what's coming next.</p>
+      <div id="globeViz"></div>
+      <input type="range" id="yearSlider" min="2023" max="2026" step="1" value="2025" />
+      <label for="yearSlider">Year: <span id="yearLabel">2025</span></label>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PWRS | Contact | Support | Integrations</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
